@@ -148,4 +148,6 @@ for app in blocked_apps:
 threading.Thread(target=kill_loop, daemon=True).start()
 threading.Thread(target=setup_tray, daemon=True).start()
 
+window.withdraw()
+
 window.mainloop()
